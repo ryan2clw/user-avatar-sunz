@@ -1,3 +1,6 @@
+# I forked this to fix some Async issues
+Probably will ask for these changes to be merged into the original project
+
 # React Native User Avatar
 
 [![npm version](https://img.shields.io/npm/v/react-native-user-avatar.svg?style=flat-square)](https://www.npmjs.com/package/react-native-user-avatar)
