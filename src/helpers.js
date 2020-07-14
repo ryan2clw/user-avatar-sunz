@@ -31,6 +31,11 @@ export const fetchImage = async (src, options) => {
       return false;
     }
   } catch (err) {
+    if(err.name === 'AbortError'){
+      // This isn't really an error, the fetch was aborted
+      return false;
+    }
+    // ruh-roh, unexpected behavior
     console.warn('Error fetching source, falling back to initials', err);
     return false;
   }
